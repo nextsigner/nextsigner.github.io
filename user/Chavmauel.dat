@@ -1,0 +1,10 @@
+[General]
+name=Chavmauel
+type=Other
+GMT=2000-10-28T12:45:00
+timezone=-6
+lon=@Variant(\0\0\0\x87\xc2\xc6\xa6_)
+lat=@Variant(\0\0\0\x87\x41\x9b\xc2\v)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Naulcapan de Juarez Estado de Mexico Mexico\nlat: 19.4697484\nlon: -99.3249399
+comment=

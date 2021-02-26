@@ -1,0 +1,10 @@
+[General]
+name=DimeLeonel
+type=Other
+GMT=1998-08-04T16:54:19
+timezone=-5
+lon=@Variant(\0\0\0\x87\xc2\xc2\xfe\xb6)
+lat=@Variant(\0\0\0\x87\x41\xcf\x36\xc9)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=
+comment=Brown Ville Texas\nlatitud 25.90175 y longitud -97.49748

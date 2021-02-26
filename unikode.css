@@ -1,0 +1,8 @@
+.boton1 a:link,
+.boton1 a:visited,
+.boton1 a:hover {
+	padding: 20px;
+	margin: 20px;
+	background-color:#ff3300;
+	color:#fff;
+}

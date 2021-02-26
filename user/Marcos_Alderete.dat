@@ -1,0 +1,10 @@
+[General]
+name=Marcos_Alderete
+type=Other
+GMT=1981-09-05T11:30:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2j\x1b%)
+lat=@Variant(\0\0\0\x87\xc2\n7R)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Villa Marteli Buenos Aires Argentina\nlat: -34.5540251\nlon: -58.526507
+comment=

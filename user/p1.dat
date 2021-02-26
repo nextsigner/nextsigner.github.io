@@ -1,0 +1,10 @@
+[General]
+GMT=1975-06-20T22:00:00
+comment=
+lat=@Variant(\0\0\0\x87\xc2\x8b(\xd5)
+lon=@Variant(\0\0\0\x87\xc2\r\xf0\x17)
+name=p1
+placeTag=
+timezone=-3
+type=Other
+z=@Variant(\0\0\0\x87\0\0\0\0)

@@ -1,0 +1,10 @@
+[General]
+name=saturnx_girlx
+type=Other
+GMT=2001-10-19T16:45:00
+timezone=-4
+lon=@Variant(\0\0\0\x87\xc2\x8cY\x5)
+lat=@Variant(\0\0\0\x87\xc1\xa1\xf5`)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Iquique Chile\nlat: -20.2448127\nlon: -70.1738689
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=Eitohaze RS2020
+type=Other
+GMT=2020-10-23T15:36:00
+timezone=-3
+lon=@Variant(\0\0\0ÂjK$)
+lat=@Variant(\0\0\0Â\nv)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment="Coordenadas de Miami para Carta Natal lon -80,19305 lat 25,77426. Esta RS utiliza coordenadas de CABA donde vive en 2020"

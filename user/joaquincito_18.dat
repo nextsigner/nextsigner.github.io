@@ -1,0 +1,10 @@
+[General]
+name=joaquincito_18
+type=Other
+GMT=2002-04-04T11:30:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2k\x15\xd6)
+lat=@Variant(\0\0\0\x87\xc2\n7I)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=San Miguel Buenos Aires Argentina\nlat: -34.5539882\nlon: -58.7713246
+comment=

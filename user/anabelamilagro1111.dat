@@ -1,0 +1,10 @@
+[General]
+name=anabelamilagro1111
+type=Other
+GMT=1990-08-01T13:30:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2\x89\"\xa9)
+lat=@Variant(\0\0\0\x87\xc1\xfc\x41\x11)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ciudad de San Juan Argentina\nlat: -31.5317707\nlon: -68.5676962
+comment=

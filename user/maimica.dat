@@ -1,0 +1,10 @@
+[General]
+name=maimica
+type=Other
+GMT=1991-01-14T10:01:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2i\xbf\b)
+lat=@Variant(\0\0\0\x87\xc2\vS!)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Burzaco Buenos Aires Argentina\nlat: -34.8311812\nlon: -58.4365556
+comment=

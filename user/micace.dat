@@ -1,0 +1,10 @@
+[General]
+name=micace
+type=Female
+GMT=1998-02-21T08:20:04
+timezone=-3
+lon=@Variant(\0\0\0ÂrÕ°)
+lat=@Variant(\0\0\0Áý0Ã)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment="bueno naci el 21 de febrero de 1998, a las 5.20 de la madrugada en santa fe capital argentina"

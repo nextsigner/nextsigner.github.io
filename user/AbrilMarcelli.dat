@@ -1,0 +1,10 @@
+[General]
+name=AbrilMarcelli
+type=Other
+GMT=2000-10-25T12:00:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2g\xf3\xe8)
+lat=@Variant(\0\0\0\x87\xc2\v\xae\x9e)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=La Plata Buenos Aires Argentina\nlat: -34.9205233\nlon: -57.9881898
+comment=

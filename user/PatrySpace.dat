@@ -1,0 +1,10 @@
+[General]
+name=PatrySpace
+type=Other
+GMT=2002-06-06T08:12:24
+timezone=-3
+lon=@Variant(\0\0\0B\x16y>)
+lat="@Variant(\0\0\0B_\x1;)"
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=No se donde nació
+comment=

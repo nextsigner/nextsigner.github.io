@@ -1,0 +1,10 @@
+[General]
+name=MJotax
+type=Other
+GMT=1997-06-03T14:00:22
+timezone=2
+lon=@Variant(\0\0\0À\x1dla)
+lat=@Variant(\0\0\0B\x13Z7)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment=

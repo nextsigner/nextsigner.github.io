@@ -1,0 +1,10 @@
+[General]
+name=eliannys
+type=Other
+GMT=2000-01-19T11:20:00
+timezone=-4
+lon=@Variant(\0\0\0\x87\xc2\x87\x8ds)
+lat=@Variant(\0\0\0\x87\x41'\\\xdc)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ocumare Venezuela\nlat: 10.4601705\nlon: -67.7762675
+comment=

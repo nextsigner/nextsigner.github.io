@@ -1,0 +1,10 @@
+[General]
+name=beatriz
+type=Other
+GMT=1954-09-27T08:30:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2n0L)
+lat=@Variant(\0\0\0\x87\xc1\xf0\x1d\x90)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Esquina Corrientes Argentina\nlat: -30.0144357\nlon: -59.5471656
+comment=

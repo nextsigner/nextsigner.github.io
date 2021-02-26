@@ -1,0 +1,10 @@
+[General]
+name=Nico RS2020
+type=Other
+GMT=2020-11-03T00:55:46
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2j>\t)
+lat=@Variant(\0\0\0\x87\xc2\n\xb4\xd7)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=
+comment=

@@ -1,0 +1,10 @@
+[General]
+GMT=1980-09-08T20:00:00
+comment=
+lat=@Variant(\0\0\0\x87\xc2\v\f\xc1)
+lon=@Variant(\0\0\0\x87\xc2j\x86\xb0)
+name=Natalia Mercurio
+placeTag=González Catán\nlat: -34.7624548\nlon: -58.6315295
+timezone=-3
+type=Other
+z=@Variant(\0\0\0\x87\0\0\0\0)

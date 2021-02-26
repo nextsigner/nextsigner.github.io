@@ -1,0 +1,10 @@
+[General]
+name=arc_o5
+type=Other
+GMT=1989-04-20T16:37:00
+timezone=1
+lon=@Variant(\0\0\0\x87\x41O |)
+lat=@Variant(\0\0\0\x87\x42@\xf3\x91)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Braunau am Inn Austria\nlat: 48.2378587\nlon: 12.9454303
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=eliii82
+type=Other
+GMT=1982-05-04T02:45:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2i\x81q)
+lat=@Variant(\0\0\0\x87\xc2\n\xa5@)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Avellaneda Buenos Aires Argentina\nlat: -34.6613781\nlon: -58.3764069
+comment=

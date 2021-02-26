@@ -1,0 +1,10 @@
+[General]
+name=abru1807
+type=Other
+GMT=2001-04-09T16:15:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2tG\xa7)
+lat=@Variant(\0\0\0\x87\xc2\v\xfd\xcd)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Los Toldos General Viamonte Provincia de Buenos Aires Argentina\nlat: -34.9978514\nlon: -61.069974
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=Kyouma_ks
+type=Other
+GMT=1998-12-31T10:04:28
+timezone=-4
+lon=@Variant(\0\0\0ÂKê)
+lat=@Variant(\0\0\0Â\x5Óè)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment="fecha 31 de diciembre del 98, la hora entre las 6 am o 6:30 am, y la ciudad santiago de chile"

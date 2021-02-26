@@ -1,0 +1,54 @@
+Tropical sign
+Sun         29 Gem 06 V    (96%)    +3|-7  ruler of VII  
+Moon        26 Sco 52 X    (102%)  +14|-4  ruler of VI   Fall
+Mercury     15 Gem 06 IV   (-9%)   +17|-7  ruler of V    House
+Venus       14 Leo 27 VI   (90%)   +11|-9  ruler of IV   
+Mars        22 Ari 45 II   (128%)  +26|0   ruler of III  House
+Jupiter     20 Ari 11 II   (114%)  +16|-13 ruler of XI   
+Saturn      19 Cnc 22 V    (179%)  +14|-7  ruler of XII  Detriment
+Uranus      28 Lib 28 IX   (-40%)   +7|-10 ruler of I    
+Neptune      9 Sgr 54 X    (-117%) +15|-5  ruler of II   Exaltation
+Pluto        6 Lib 29 VIII (14%)    +9|-9  ruler of X    Detriment
+N. Pole      0 Sgr 47 X                   
+S. Pole      0 Gem 47 IV                  
+Hiron       27 Ari 25 III                 
+Proserpina  28 Lib 37 IX                  
+Selena       0 Gem 23 IV                  
+Lilith      15 Psc 11 I                   
+
+Auriga:     Saturn
+Almuten:    Mars
+Doryphoros: Mercury
+
+Houses (Equal)
+ Asc - 26 Aqr 21
+  II - 26 Psc 21
+ III - 26 Ari 21
+  IV - 26 Tau 21
+   V - 26 Gem 21
+  VI - 26 Cnc 21
+ VII - 26 Leo 21
+VIII - 26 Vir 21
+  IX - 26 Lib 21
+   X - 26 Sco 21
+  XI - 26 Sgr 21
+ XII - 26 Cap 21
+
+Trine          Sun-Uranus           <119°21'>
+Trine          Sun-Proserpina       <119°30'>
+Conjunction    Moon-N. Pole         >3°56'<
+Opposition     Moon-S. Pole         >176°04'<
+Opposition     Moon-Selena          >176°28'<
+Quadrature     Mercury-Lilith       >90°24'<
+Trine          Venus-Neptune        <115°26'>
+Conjunction    Mars-Jupiter         <2°36'>
+Quadrature     Mars-Saturn          <86°37'>
+Quadrature     Jupiter-Saturn       <89°10'>
+Trine          Saturn-Lilith        <124°16'>
+Opposition     Uranus-Hiron         >178°57'<
+Conjunction    Uranus-Proserpina    <0°33'>
+Opposition     N. Pole-Selena       >179°36'<
+Conjunction    S. Pole-Selena       >0°23'<
+Opposition     Hiron-Proserpina     >178°48'<
+
+

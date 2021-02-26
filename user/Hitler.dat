@@ -1,0 +1,10 @@
+[General]
+name=Hitler
+type=Other
+GMT=1889-04-20T17:01:18
+timezone=1
+lon=@Variant(\0\0\0AP±ä)
+lat=@Variant(\0\0\0BA\x6n)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment="Braunau am Inn (Upper Austria), Austria\nLatitud: 48°15′23″N\nLongitud: 13°02′36″E\n\n20/04/1889 18:30:00 (LMT)\nZona Horaria: UT +00:52:10\nFecha UT: 20/04/1889\nHora UT: 17:37:50"

@@ -1,0 +1,10 @@
+[General]
+name=bambururu
+type=Other
+GMT=1988-11-08T02:00:00
+timezone=1
+lon=@Variant(\0\0\0\x87\xc0h\x15()
+lat=@Variant(\0\0\0\x87\x42\x14\xb9I)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Granada España\nlat: 37.1809411\nlon: -3.6262912
+comment=

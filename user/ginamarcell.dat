@@ -1,0 +1,10 @@
+[General]
+name=ginamarcell
+type=Other
+GMT=1990-11-19T02:30:00
+timezone=-5
+lon=@Variant(\0\0\0\x87\xc2\x97Mq)
+lat=@Variant(\0\0\0\x87@\xc7\xd0z)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Medellín Colombia\nlat: 6.2441988\nlon: -75.6512521
+comment=

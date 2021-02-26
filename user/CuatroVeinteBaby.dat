@@ -1,0 +1,10 @@
+[General]
+name=CuatroVeinteBaby
+type=Other
+GMT=1998-02-05T00:50:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2jK%)
+lat=@Variant(\0\0\0\x87\xc2\nv\x86)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ciudad de Buenos Aires Buenos Aires Argentina\nlat: -34.6157437\nlon: -58.5733832
+comment=

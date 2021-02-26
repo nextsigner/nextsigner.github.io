@@ -1,0 +1,10 @@
+[General]
+name=risiflow2
+type=Other
+GMT=1988-11-10T21:00:00
+timezone=1
+lon=@Variant(\0\0\0\x87\xc0\x1f\x7f()
+lat=@Variant(\0\0\0\x87\x42\x13]\xb8)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Almería España\nlat: 36.841523\nlon: -2.4921361
+comment=

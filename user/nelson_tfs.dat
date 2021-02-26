@@ -1,0 +1,10 @@
+[General]
+name=nelson_tfs
+type=Other
+GMT=1991-12-15T11:00:00
+timezone=1
+lon=@Variant(\0\0\0\x87\xc0\xcbS\xb4)
+lat=@Variant(\0\0\0\x87\x42\x13\xf9\x90)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=San Lucas de Barraneda Sevilla España\nlat: 36.9937137\nlon: -6.3539675
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=Lankys
+type=Other
+GMT=1999-09-28T09:30:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2i \x80)
+lat=@Variant(\0\0\0\x87\xc2\n\xe5\xae)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Quilmes Buenos Aires Argentina\nlat: -34.7242956\nlon: -58.2817394
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=Donald_Trump
+type=Other
+GMT=1946-06-14T15:54:00
+timezone=-5
+lon=@Variant(\0\0\0\x87\xc2\x93\xa7Y)
+lat=@Variant(\0\0\0\x87\x42\"\xcb])
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag="Jamaica Queens New York, Estados Unidos\nlat: 40.6985958\nlon: -73.8268509"
+comment=

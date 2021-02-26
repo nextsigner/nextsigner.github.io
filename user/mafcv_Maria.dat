@@ -1,0 +1,10 @@
+[General]
+name=mafcv_Maria
+type=Other
+GMT=1995-01-20T19:45:00
+timezone=-5
+lon="@Variant(\0\0\0\x87\xc2\xa0=\x89)"
+lat=@Variant(\0\0\0\x87\xc0\t\xc2z)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Guayaquil Ecuador\nlat: -2.1524948\nlon: -80.1201876
+comment=

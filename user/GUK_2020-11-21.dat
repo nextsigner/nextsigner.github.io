@@ -1,0 +1,10 @@
+[General]
+GMT=2020-11-21T12:00:00
+comment=
+lat=@Variant(\0\0\0\x87\x42M\xf3\x16)
+lon=@Variant(\0\0\0\x87\0\0\0\0)
+name=GUK_2020-11-21
+placeTag=Greeewich United Kingston\nlat: 51.48739\nlon: 0.0
+timezone=0
+type=Other
+z=@Variant(\0\0\0\x87\0\0\0\0)

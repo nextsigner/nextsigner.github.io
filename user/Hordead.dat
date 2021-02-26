@@ -1,0 +1,10 @@
+[General]
+name=Hordead
+type=Other
+GMT=1995-11-20T17:00:44
+timezone=-5
+lon=@Variant(\0\0\0Â%)
+lat=@Variant(\0\0\0@bn\x1a)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment=

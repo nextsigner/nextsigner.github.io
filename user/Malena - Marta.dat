@@ -1,0 +1,10 @@
+[General]
+name=Malena - Marta
+type=Other
+GMT=1994-06-25T11:44:35
+timezone=-4
+lon=@Variant(\0\0\0ÂW\x1dÜ)
+lat=@Variant(\0\0\0Â\xf)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment="Coordenadas de Goolge Maps @-53.7791643,-67.7735574"

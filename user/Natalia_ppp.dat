@@ -1,0 +1,10 @@
+[General]
+name=Natalia_ppp
+type=Other
+GMT=1980-09-08T20:00:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2j\xda\xfb)
+lat=@Variant(\0\0\0\x87\xc2\v\xf\xb9)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=González Catán Buenos Aires Argentina\nlat: -34.7653546\nlon: -58.713849
+comment=

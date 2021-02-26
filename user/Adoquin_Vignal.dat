@@ -1,0 +1,10 @@
+[General]
+name=Adoquin_Vignal
+type=Other
+GMT=1995-08-05T09:30:00
+timezone=1
+lon=@Variant(\0\0\0\x87\x41RP\x18)
+lat=@Variant(\0\0\0\x87\x42R\x6\xab)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Berlin Alemania\nlat: 52.5065133\nlon: 13.1445545
+comment=

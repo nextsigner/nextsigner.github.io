@@ -1,0 +1,10 @@
+[General]
+GMT=
+comment=
+lat=@Variant(\0\0\0\x87\0\0\0\0)
+lon=@Variant(\0\0\0\x87\0\0\0\0)
+name=undefined
+placeTag=undefined\nlat: undefined\nlon: undefined
+timezone=-3
+type=Other
+z=@Variant(\0\0\0\x87\0\0\0\0)

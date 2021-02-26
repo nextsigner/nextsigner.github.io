@@ -1,0 +1,10 @@
+[General]
+GMT=1995-03-24T10:00:00
+comment=
+lat=@Variant(\0\0\0\x87\x42&\x9e\xe8)
+lon=@Variant(\0\0\0\x87\xc0\x97(\xb7)
+name=IzchelCosme
+placeTag=Valladolid\nlat: 41.6551819\nlon: -4.7237201
+timezone=2
+type=Other
+z=@Variant(\0\0\0\x87\0\0\0\0)

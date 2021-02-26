@@ -1,0 +1,10 @@
+[General]
+name=beatriz RS2021
+type=Other
+GMT=2021-09-26T14:01:49
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2n0L)
+lat=@Variant(\0\0\0\x87\xc1\xf0\x1d\x90)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Esquina Corrientes Argentina\nlat: -30.0144357\nlon: -59.5471656
+comment=

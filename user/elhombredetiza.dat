@@ -1,0 +1,10 @@
+[General]
+name=elhombredetiza
+type=Other
+GMT=1982-12-23T22:00:00
+timezone=1
+lon=@Variant(\0\0\0\x87\xc0tt\xaa)
+lat=@Variant(\0\0\0\x87\x42!\xc0\x61)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Madrid España\nlat: 40.4378698\nlon: -3.8196207
+comment=

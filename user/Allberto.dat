@@ -1,0 +1,10 @@
+[General]
+name=Allberto
+type=Other
+GMT=1999-12-14T15:30:45
+timezone=-3
+lon="@Variant(\0\0\0@)=)"
+lat=@Variant(\0\0\0B\x1eGE)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment=

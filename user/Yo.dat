@@ -1,0 +1,10 @@
+[General]
+name=Yo
+type=Other
+GMT=1975-06-21T02:00:00
+timezone=-3
+lon="@Variant(\0\0\0\x87\xc2\x8b;\xf)"
+lat=@Variant(\0\0\0\x87\xc2\r\xea\xe)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Malargue Mendoza Argentina\nlat: -35.4785708\nlon: -69.6153497
+comment=

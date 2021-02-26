@@ -1,0 +1,10 @@
+[General]
+name=Cala
+type=Other
+GMT=1997-05-03T09:50:38
+timezone=-3
+lon=@Variant(\0\0\0Âföb)
+lat=@Variant(\0\0\0Â\x18\x11Ñ)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment=Nación en el hospital Oñativia Mar del Plata\nlon: -57.7406184 lat:-38.0174836

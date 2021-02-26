@@ -1,0 +1,10 @@
+[General]
+name=Larideal
+type=Other
+GMT=1997-08-25T14:29:45
+timezone=2
+lon=@Variant(\0\0\0Á\x2$@)
+lat=@Variant(\0\0\0B*.\")
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment=

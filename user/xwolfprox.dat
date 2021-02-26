@@ -1,0 +1,10 @@
+[General]
+name=xwolfprox
+type=Male
+GMT=2001-04-02T13:02:09
+timezone=1
+lon=@Variant(\0\0\0\x87\xbf`\x99[)
+lat=@Variant(\0\0\0\x87\x42&\x9f\xce)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=
+comment=02/04/2001 a las 14:02 en zaragoza\nlatitud 41.65606 y longitud -0.87734

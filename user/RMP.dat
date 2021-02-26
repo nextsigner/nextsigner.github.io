@@ -1,0 +1,10 @@
+[General]
+GMT=1975-06-21T02:00:50
+comment=
+lat=@Variant(\0\0\0\x87\xc2\r\xf0\x16)
+lon=@Variant(\0\0\0\x87\xc2\x8b(\xd4)
+name=RMP
+placeTag=
+timezone=-3
+type=Other
+z=@Variant(\0\0\0\x87\0\0\0\0)

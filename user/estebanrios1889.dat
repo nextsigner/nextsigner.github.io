@@ -1,0 +1,10 @@
+[General]
+name=estebanrios1889
+type=Other
+GMT=2001-06-15T12:00:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2s\x11\x14)
+lat=@Variant(\0\0\0\x87\xc2\x3\xcf\v)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Rosario Santa Fe Argentina\nlat: -32.9521898\nlon: -60.7666797
+comment=

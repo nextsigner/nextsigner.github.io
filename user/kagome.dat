@@ -1,0 +1,10 @@
+[General]
+name=kagome
+type=Other
+GMT=1991-12-24T03:00:30
+timezone=2
+lon="@Variant(\0\0\0@\n,º)"
+lat=@Variant(\0\0\0B%\a)
+z=@Variant(\0\0\0\0\0\0\0)
+placeTag=
+comment=

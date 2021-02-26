@@ -1,0 +1,10 @@
+[General]
+name=AztroNaut17
+type=Other
+GMT=2001-03-17T10:00:00
+timezone=-6
+lon=@Variant(\0\0\0\x87\xc2\xa8]\xe5)
+lat=@Variant(\0\0\0\x87\x41\x1e\xf7\xf7)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=San José Costa Rica\nlat: 9.9355384\nlon: -84.1833856
+comment=

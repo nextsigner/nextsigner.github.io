@@ -1,0 +1,10 @@
+[General]
+name=Fissco
+type=Other
+GMT=2000-02-19T14:35:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2t\x1a\x15)
+lat=@Variant(\0\0\0\x87\xc2\n\\\xfe)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Junin Provincia de Buenos Aires Argentina\nlat: -34.5908136\nlon: -61.0254711
+comment=

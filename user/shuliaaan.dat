@@ -1,0 +1,10 @@
+[General]
+name=shuliaaan
+type=Other
+GMT=1993-10-24T13:00:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2\x80\xab:)
+lat=@Variant(\0\0\0\x87\xc1\xfb\x31\xed)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ciudad de Córdoba Argentina\nlat: -31.399377\nlon: -64.3344291
+comment=
