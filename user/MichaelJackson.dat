@@ -1,0 +1,10 @@
+[General]
+name=MichaelJackson
+type=Other
+GMT=1958-08-29T17:09:00
+timezone=-5
+lon=@Variant(\0\0\0\x87\xc2\xae\xef\x93)
+lat=@Variant(\0\0\0\x87\x42&Z\xa7)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Gary (Lake IN) Estados Unidos\nlat: 41.5885265\nlon: -87.4679218
+comment=

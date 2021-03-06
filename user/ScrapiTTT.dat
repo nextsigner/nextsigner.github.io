@@ -1,0 +1,10 @@
+[General]
+name=ScrapiTTT
+type=Other
+GMT=1997-02-17T20:04:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2\x82\xc4$)
+lat=@Variant(\0\0\0\x87\xc2-\r\xa0)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Trelew Rawson Provincia de Chubut\nlat: -43.263305\nlon: -65.3830899
+comment=

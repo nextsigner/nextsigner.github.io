@@ -1,0 +1,10 @@
+[General]
+name=grachita
+type=Other
+GMT=1993-04-23T22:05:00
+timezone=-4
+lon=@Variant(\0\0\0\x87\xc2\x86\xf\x97)
+lat=@Variant(\0\0\0\x87\x41'~h)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Caracas Venezuela\nlat: 10.4683612\nlon: -67.0304525
+comment=

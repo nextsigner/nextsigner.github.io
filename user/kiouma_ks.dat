@@ -1,0 +1,10 @@
+[General]
+name=kiouma_ks
+type=Other
+GMT=1998-12-31T10:34:00
+timezone=-4
+lon=@Variant(\0\0\0\x87\xc2\x8d\xd1\xee)
+lat=@Variant(\0\0\0\x87\xc2\x5\xe3\xd0)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Santiago de Chile Chile\nlat: -33.4724728\nlon: -70.9100195
+comment=

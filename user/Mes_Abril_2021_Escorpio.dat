@@ -1,0 +1,10 @@
+[General]
+name=Mes_Abril_2021_Escorpio
+type=Other
+GMT=2021-04-01T19:11:00
+timezone=0
+lon=@Variant(\0\0\0\x87\0\0\0\0)
+lat=@Variant(\0\0\0\x87\0\0\0\0)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Centro\nlat: 0.0\nlon: 0.0
+comment=

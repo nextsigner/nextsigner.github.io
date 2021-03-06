@@ -1,7 +1,7 @@
 [General]
 name=joana
 type=Other
-GMT=1989-05-10T19:50:00
+GMT=1989-05-10T19:50:10
 timezone=-3
 lon=@Variant(\0\0\0\x87\xc2j_h)
 lat=@Variant(\0\0\0\x87\xc2\n\x9d\x94)

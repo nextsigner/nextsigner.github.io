@@ -1,7 +1,7 @@
 [General]
 name=joana RS2021
 type=Other
-GMT=2021-05-10T13:41:04
+GMT=2021-05-10T13:43:33
 timezone=-3
 lon=@Variant(\0\0\0\x87\xc2j_h)
 lat=@Variant(\0\0\0\x87\xc2\n\x9d\x94)

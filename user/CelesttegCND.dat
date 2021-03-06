@@ -1,7 +1,7 @@
 [General]
 name=CelesttegCND
 type=Other
-GMT=2004-11-11T18:10:00
+GMT=2004-11-11T18:11:00
 timezone=-3
 lon=@Variant(\0\0\0\x87\xc2v\x1f\x3)
 lat=@Variant(\0\0\0\x87\xc2\0Q\xc9)

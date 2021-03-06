@@ -1,0 +1,10 @@
+[General]
+name=tttofii
+type=Other
+GMT=1999-06-28T10:50:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2\x82\xcfO)
+lat=@Variant(\0\0\0\x87\xc1\xbc\xa2\x39)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Tilcara Jujuy Argentina\nlat: -23.5792105\nlon: -65.404902
+comment=

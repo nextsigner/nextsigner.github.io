@@ -1,7 +1,7 @@
 [General]
 name=elhombredetiza
 type=Other
-GMT=1982-12-23T22:00:00
+GMT=1982-12-23T22:12:00
 timezone=1
 lon=@Variant(\0\0\0\x87\xc0tt\xaa)
 lat=@Variant(\0\0\0\x87\x42!\xc0\x61)
