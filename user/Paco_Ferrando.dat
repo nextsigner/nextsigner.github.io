@@ -1,0 +1,10 @@
+[General]
+name=Paco_Ferrando
+type=Other
+GMT=2002-06-28T06:00:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\x42\x13L\xef)
+lat=@Variant(\0\0\0\x87\x42^R\xb0)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Moscu Rusia\nlat: 55.5807481\nlon: 36.8251304
+comment=

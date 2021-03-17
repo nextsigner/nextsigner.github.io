@@ -1,0 +1,10 @@
+[General]
+name=dr_retsuko
+type=Other
+GMT=2002-12-17T07:30:00
+timezone=-6
+lon=@Variant(\0\0\0\x87\xc2\xc6\xd8\xfd)
+lat=@Variant(\0\0\0\x87\x41\x9b\x1f\xc8)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ciudad de Mexico Mexico\nlat: 19.390519\nlon: -99.4238064
+comment=
