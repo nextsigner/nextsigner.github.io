@@ -1,0 +1,10 @@
+[General]
+name=Usuario_iseit
+type=Other
+GMT=1998-03-20T23:35:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2\x7f\x46/)
+lat=@Variant(\0\0\0\x87\xc1\xb4-\xfd)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Tartagal Salta Argentina\nlat: -22.5224559\nlon: -63.818539
+comment=

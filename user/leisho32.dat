@@ -1,0 +1,10 @@
+[General]
+name=leisho32
+type=Other
+GMT=1986-01-13T02:58:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2s\x11\x14)
+lat=@Variant(\0\0\0\x87\xc2\x3\xcf\v)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Rosario Argentina\nlat: -32.9521898\nlon: -60.7666797
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=valdez_karen
+type=Other
+GMT=1994-05-05T11:30:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2r\xa0\xaa)
+lat=@Variant(\0\0\0\x87\xc1\xcf\x9c\xd9)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Juan Jose Castelli Provincia de Chaco Argentina\nlat: -25.9515849\nlon: -60.6569
+comment=

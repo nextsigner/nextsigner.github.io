@@ -1,0 +1,10 @@
+[General]
+name=alejandra_rodgar
+type=Other
+GMT=2002-10-02T08:30:00
+timezone=-5
+lon=@Variant(\0\0\0\x87\xc2\xc6\xa6_)
+lat=@Variant(\0\0\0\x87\x41\x9b\xc2\v)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Naucalpan Juárez Mexico\nlat: 19.4697484\nlon: -99.3249399
+comment=

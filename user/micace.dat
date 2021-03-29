@@ -1,10 +1,10 @@
 [General]
 name=micace
-type=Female
-GMT=1998-02-21T08:20:04
+type=Other
+GMT=1998-02-21T08:20:00
 timezone=-3
-lon=@Variant(\0\0\0ÂrÕ°)
-lat=@Variant(\0\0\0Áý0Ã)
-z=@Variant(\0\0\0\0\0\0\0)
-placeTag=
-comment="bueno naci el 21 de febrero de 1998, a las 5.20 de la madrugada en santa fe capital argentina"
+lon=@Variant(\0\0\0\x87\xc2s\x1a\xee)
+lat=@Variant(\0\0\0\x87\xc1\xfc\xf1\xeb)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ciudad de Santa Fe Santa Fe\nlat: -31.6181236\nlon: -60.7762973
+comment=

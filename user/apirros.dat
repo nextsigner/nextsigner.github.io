@@ -1,0 +1,10 @@
+[General]
+name=apirros
+type=Other
+GMT=2001-04-04T21:00:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2jK%)
+lat=@Variant(\0\0\0\x87\xc2\nv\x86)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Ciudad de Buenos Aires Argentina\nlat: -34.6157437\nlon: -58.5733832
+comment=

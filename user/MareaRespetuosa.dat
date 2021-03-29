@@ -1,0 +1,10 @@
+[General]
+name=MareaRespetuosa
+type=Other
+GMT=1992-04-17T08:22:00
+timezone=1
+lon=@Variant(\0\0\0\x87\xc0/\xd2\x18)
+lat=@Variant(\0\0\0\x87\x42+j\x83)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Vitoria Pais Vasco España\nlat: 42.8540156\nlon: -2.747198
+comment=

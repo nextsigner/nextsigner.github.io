@@ -1,0 +1,10 @@
+[General]
+name=sankokay
+type=Other
+GMT=1974-08-07T03:20:00
+timezone=-5
+lon=@Variant(\0\0\0\x87\xc2\x94~\xec)
+lat=@Variant(\0\0\0\x87@\x94\xbe\xbd)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Bogotá Colombia\nlat: 4.6482837\nlon: -74.2478938
+comment=

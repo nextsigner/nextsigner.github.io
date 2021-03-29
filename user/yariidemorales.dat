@@ -1,0 +1,10 @@
+[General]
+name=yariidemorales
+type=Other
+GMT=1995-07-09T14:16:00
+timezone=-8
+lon=@Variant(\0\0\0\x87\xc2\xed\x62\x43)
+lat=@Variant(\0\0\0\x87\x42\b\x14\xa5)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Los Angeles California Estados Unidos\nlat: 34.0201613\nlon: -118.6919205
+comment=

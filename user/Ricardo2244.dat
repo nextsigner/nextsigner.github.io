@@ -1,0 +1,10 @@
+[General]
+name=Ricardo2244
+type=Other
+GMT=1975-06-20T23:35:00
+timezone=-3
+lon=@Variant(\0\0\0\x87\xc2\x88\xca^)
+lat=@Variant(\0\0\0\x87\xc2\n\x82\x88)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=San Rafael Mendoza Argentina\nlat: -34.6274731\nlon: -68.3952498
+comment=

@@ -1,0 +1,10 @@
+[General]
+name=Incognita1
+type=Other
+GMT=1964-01-12T17:33:00
+timezone=-6
+lon=@Variant(\0\0\0\x87\xc2\xd5\xe9\xd0)
+lat=@Variant(\0\0\0\x87\x42\fT\xf)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Albuquerque NM Estados Unidos\nlat: 35.0820877\nlon: -106.9566669
+comment=

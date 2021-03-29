@@ -1,0 +1,10 @@
+[General]
+name=Pruminot1
+type=Other
+GMT=1997-09-10T13:57:00
+timezone=-4
+lon=@Variant(\0\0\0\x87\xc2\x92\x34\xc8)
+lat=@Variant(\0\0\0\x87\xc2\x13M\xd9)
+z=@Variant(\0\0\0\x87\0\0\0\0)
+placeTag=Concepción Chile\nlat: -36.8260216\nlon: -73.1030856
+comment=
