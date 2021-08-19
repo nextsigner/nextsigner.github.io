@@ -16,7 +16,7 @@ Window{
         contentHeight: txt.contentHeight
         Text{
             id: txt
-            font.pixelSize: app.fs
+            font.pixelSize: app.fs*0.5
             color: 'white'
             width: r.width-100
             anchors.horizontalCenter: parent.horizontalCenter
