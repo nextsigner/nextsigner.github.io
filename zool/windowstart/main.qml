@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtQuick.Window 2.0
+import QtQuick 2.12
+import QtQuick.Window 2.12
 import QtQuick.Controls 2.0
 
 Window{
@@ -10,6 +10,9 @@ Window{
     x: (Screen.width-width)*0.5
     title: 'Bienvenido a Zool - Novedades'
     color: 'black'
+    onClosing: {
+        apps.newClosed=true
+    }
     Flickable{
         width: r.width
         height: r.height
