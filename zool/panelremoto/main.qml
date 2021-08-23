@@ -2,7 +2,7 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.0
 
-Item{
+Rectangle{
     id: r
     visible: true
     width: r.parent?parent.width:Screen.width*0.35
