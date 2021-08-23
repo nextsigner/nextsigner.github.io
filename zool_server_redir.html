@@ -10,7 +10,10 @@
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
     var link = getParameterByName('link');
-    var l = document.getElementById('lnk').href=(''+link).indexOf('http')<0?'http://'+link:link;
-    window.location.href = (''+link).indexOf('http')<0?'http://'+link:link
+    var d = new Date(Date.now());
+    var ms = d.getTime();
+    var nlink=(''+link).indexOf('?')<0?link+'?r='+ms:link+'&r='+ms;
+    document.getElementById('lnk').href=nlink
+    window.location.href = nlink
 </script>
 
