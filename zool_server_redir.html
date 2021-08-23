@@ -1,0 +1,16 @@
+<h2>Enlace de dDescarga de Zool</h2>
+
+<a id="lnk">Descargar Zool</a>
+
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var link = getParameterByName('link');
+    var l = document.getElementById('lnk').href=link;
+    window.location.href = link;
+</script>
+
