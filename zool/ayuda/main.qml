@@ -8,7 +8,7 @@ Window{
     width: Screen.width*0.35
     height: Screen.height*0.5
     x: (Screen.width-width)*0.5
-    title: 'Bienvenido a Zool - Novedades'
+    title: 'Ayuda de Zool'
     color: 'black'
     onClosing: {
         apps.newClosed=true
@@ -31,6 +31,17 @@ Window{
     Component.onCompleted: {
         let t='<h1>Ayuda de Zool</h1>
 <h2>Hoy 23/08/2021 12:46hs de Argentina estoy completando este manual</h2>
+
+<h2>Crear Mapa Natal</h2>
+<p>Ir al Menú->Archivo->Nuevo. En el lateral izquierdo aparecerá un panel en donde hay que llenar los campos con los datos requeridos. Los datos son:</p>
+<ul>
+    <li>Nombre del consultante (así se llamará el archivo o documento)</li>
+    <li>Fecha de nacimiento.</li>
+    <li>Hora de nacimiento.</li>
+    <li>GMT (cantidad de horas de diferencia entre la hora de la ciudad de nacimiento, cantidad negativa o positiva, hasta el meridiano de Greenwich o meridiano cero.)</li>
+    <li>Lugar de nacimiento. (Ciudad, provincia y/o Region y país. Por ejemplo: Florida Buenos Aires Argentina)</li>
+</ul>
+
 <br/><br/>
 '
         txt.text=t
