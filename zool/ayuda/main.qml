@@ -42,6 +42,8 @@ Window{
     <li>Lugar de nacimiento. (Ciudad, provincia y/o Region y país. Por ejemplo: Florida Buenos Aires Argentina)</li>
 </ul>
 
+<p><b>Nota: </b> Para ver el panel de crear carta natal desde el tecledo presiones las teclas "Ctrl" y "N" simultáneamente.</p>
+
 <br/><br/>
 '
         txt.text=t
