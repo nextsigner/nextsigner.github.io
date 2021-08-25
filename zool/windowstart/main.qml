@@ -64,7 +64,7 @@ Window{
     <li><b>Whatsapp: </b> +54 11 3802 4370</li>
 </ul>
 
-<h2>¿Cómo puedo apoyar  este pproyecto?</h2>
+<h2>¿Cómo puedo apoyar  este proyecto?</h2>
 <p>Si queres apoyar el desarrollo de esta aplicación, tenés, aquí tenés una lista de opciones.</p>
 <ul>
     <li><b>Utilizando y Probando esta aplicación: </b> <a href="https://www.facebook.com/groups/386512166139820" style="color: '+apps.fontColor+';">Avisar sobre un error o comentar</a></li>
