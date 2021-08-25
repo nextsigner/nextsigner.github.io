@@ -47,12 +47,33 @@ Window{
     <li>Nicolás Martín Pizarro</li>
     <li>Natalia Soledad Pintos</li>
     <li>Nora Castrejón</li>
+    <li>Juanchirris Ruiz</li>
 </ul>
 <p>Tambien puedes contactarte por las siguientes vías de comunicación:</p>
 <ul>
     <li><b>Whatsapp: </b>+54 11 3802 4370</li>
     <li><b>E-Mail: </b>nextsigner@gmail.com</li>
 </ul>
+
+<h2>Tengo una idea para aportar, ¿Cómo solicito su implementación?</h2>
+<p>Si tenés alguna idea sobre alguna herramienta, comando, función o característica para agregar a este panel y a la aplicación, comunicate directamente con el programador de la aplicación.</p>
+<p>Para comunicarte con el programador, estas son las vías de comunicación:</p>
+<ul>
+    <li><b>Grupo de Facebook: </b> <a href="https://www.facebook.com/groups/386512166139820" style="color: '+apps.fontColor+';">Aplicación Astrológica Zool</a></li>
+    <li><b>Correo Electrónico: </b> <a href="mailto:nextsigner@gmail.com" style="color: '+apps.fontColor+';">nextsigner@gmail.com</a></li>
+    <li><b>Whatsapp: </b> +54 11 3802 4370</li>
+</ul>
+
+<h2>¿Cómo puedo apoyar  este pproyecto?</h2>
+<p>Si queres apoyar el desarrollo de esta aplicación, tenés, aquí tenés una lista de opciones.</p>
+<ul>
+    <li><b>Utilizando y Probando esta aplicación: </b> <a href="https://www.facebook.com/groups/386512166139820" style="color: '+apps.fontColor+';">Avisar sobre un error o comentar</a></li>
+    <li><b>Aportando información al Repositorio Quirón: </b> <a href="https://github.com/nextsigner/quiron" style="color: '+apps.fontColor+';">Ir al Repositorio Quirón</a></li>
+    <li><b>Enviar dinero por PapPal: </b> <a href="https://paypal.me/lucentrica" style="color: '+apps.fontColor+';">https://paypal.me/lucentrica</a></li>
+    <li><b>Enviar dinero por Ualá MasterCard: </b> CVU: Alias NEXTSIGNER.UALA</li>
+</ul>
+<br/><br/>
+
 <br/><br/>
 '
         txt.text=t
