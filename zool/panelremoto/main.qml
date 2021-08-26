@@ -29,11 +29,19 @@ Rectangle{
                     text: '<b>Repositorio Quirón</b>'
                     font.pixelSize: app.fs*0.5
                     color: 'white'
-                    width: r.width-100
+                    width: r.width-app.fs
                     anchors.horizontalCenter: parent.horizontalCenter
                     textFormat: Text.RichText
                     wrapMode: Text.WordWrap
                     onLinkActivated: Qt.openUrlExternally(link)
+                }
+                Text{
+                    text: 'De momento solo hay información de Plutón, Saturno y otros incompletos.\nPodes colaborar enviando información al correo nextsigner@gmail.com'
+                    font.pixelSize: app.fs*0.35
+                    color: 'white'
+                    width: r.width-app.fs
+                    wrapMode: Text.WordWrap
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
                 ComboBox{
                     id: cbPlanetas
@@ -51,14 +59,14 @@ Rectangle{
                     anchors.horizontalCenter: parent.horizontalCenter
                 }
                 Button{
-                    text: 'Info'
-                    width: app.fs*3
+                    text: 'Obtener Información'
+                    width: implicitContentWidth+app.fs*0.5
                     height: app.fs*0.6
                     anchors.horizontalCenter: parent.horizontalCenter
                     onClicked: {
                         let s1=app.planetasRes[cbPlanetas.currentIndex]
                         let s2=app.objSignsNames[cbSign.currentIndex]
-                        let s3=cbCasas.currentIndex
+                        let s3=cbCasas.currentIndex+1
                         app.uSon=s1+'_'+s2+'_'+s3
                         console.log('uSon: '+app.uSon)
                         JS.showIW()
@@ -86,6 +94,25 @@ Rectangle{
                 }
             }
         }
+        Item{
+            width: r.width
+            height: r.height
+            Flickable{
+                width: r.width
+                height: r.height
+                contentHeight: txt2.contentHeight
+                Text{
+                    id: txt2
+                    font.pixelSize: app.fs*0.35
+                    color: apps.fontColor
+                    width: parent.width-app.fs*0.5
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    textFormat: Text.RichText
+                    wrapMode: Text.WordWrap
+                    onLinkActivated: Qt.openUrlExternally(link)
+                }
+            }
+        }
     }
     PageIndicator {
         id: indicator
@@ -93,6 +120,36 @@ Rectangle{
         currentIndex: view.currentIndex
         anchors.bottom: view.bottom
         anchors.horizontalCenter: parent.horizontalCenter
+    }
+    Row{
+        anchors.top: parent.top
+        anchors.topMargin: app.fs*0.15
+        anchors.left: parent.left
+        anchors.leftMargin: app.fs*0.15
+        spacing:app.fs*0.15
+        Repeater{
+            model: 3
+            Rectangle{
+                visible: index===0&&view.currentIndex>0||index===2&&view.currentIndex<view.count-1
+                width: index!==1?app.fs*0.5:r.width-app.fs
+                height: index!==1?width:app.fs*0.5
+                radius: width*0.15
+                border.width: 1
+                //opacity: index!==1?0.5:1.0
+                anchors.verticalCenter: parent.verticalCenter
+                Text{text: index===0?'<':'>';font.pixelSize: parent.width*0.8;anchors.centerIn: parent}
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: {
+                        if(index===0){
+                            view.currentIndex--
+                        }else{
+                            view.currentIndex++
+                        }
+                    }
+                }
+            }
+        }
     }
     Component.onCompleted: {
         r.parent.clip=true
@@ -118,5 +175,12 @@ Rectangle{
 <br/><br/>
 '
         txt.text=t
+
+        t='<br/>
+<h2>¿Que se agregará a esta aplicación?</h2>
+
+<br/><br/>
+'
+        txt2.text=t
     }
 }
