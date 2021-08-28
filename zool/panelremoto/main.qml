@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.0
+import Qt.labs.settings 1.1
 import "Funcs.js" as JS
 
 Rectangle{
@@ -11,9 +12,21 @@ Rectangle{
     border.width: 1
     border.color: apps.fontColor
     anchors.centerIn: parent
+    //property string parentState: panelRemoto
+//    onParentStateChanged: {
+//        if(panelRemoto.state==='show')prs.state='show'
+//    }
+    Settings{
+        id: prs
+        fileName: unik.getPath(4)+'/panleRemoto.cfg'
+        property string state: 'show'
+        property int currentViewIndex: 0
+        onStateChanged: panelRemoto.state=state
+     }
     SwipeView{
         id: view
-        currentIndex: 0
+        currentIndex: prs.currentViewIndex
+        onCurrentIndexChanged: prs.currentViewIndex=currentIndex
         anchors.fill: parent
         //width: r.width
         //height: r.height
@@ -127,6 +140,20 @@ Rectangle{
         anchors.left: parent.left
         anchors.leftMargin: app.fs*0.15
         spacing:app.fs*0.15
+        Rectangle{
+            width: app.fs*0.5
+            height: width
+            radius: width*0.15
+            border.width: 1
+            anchors.verticalCenter: parent.verticalCenter
+            Text{text: 'X';font.pixelSize: parent.width*0.8;anchors.centerIn: parent}
+            MouseArea{
+                anchors.fill: parent
+                onClicked: {
+                    prs.state='hide'
+                }
+            }
+        }
         Repeater{
             model: 3
             Rectangle{
@@ -151,8 +178,16 @@ Rectangle{
             }
         }
     }
+    Timer{
+        running: panelRemoto.state==='show'
+        repeat: true
+        interval: 1000
+        onTriggered: prs.state=panelRemoto.state
+    }
     Component.onCompleted: {
-        r.parent.clip=true
+        //console.log('PanelRemoto Cfg path: '+unik.getPath(4))
+        panelRemoto.state=prs.state
+
         let t='<br/>
 <h2>Tengo una idea para aportar, ¿Cómo solicito su implementación?</h2>
 <p>Si tenés alguna idea sobre alguna herramienta, comando, función o característica para agregar a este panel y a la aplicación, comunicate directamente con el programador de la aplicación.</p>
@@ -177,8 +212,22 @@ Rectangle{
         txt.text=t
 
         t='<br/>
+<h1>Aviso del Programador</h1>
+<h2>¿Qué estoy progrmando en la aplicación actualmente?</h2>
+<ul>
+    <li>Optimizando el script Python para calcular las velocidades de los planetas y así poder identificar o detectar cual está retrógrado.</li>
+<li>Estoy agregando una rueda zodiacal extra para mostrar las revoluciones solares conjuntamente con la carta natal.</li>
+<li>Agregando información sobre el porcentáje de los elementos fuego, tierra, aire y agua en la GUI o Interfaz Gráfica de Usuario.</li>
+</ul>
 <h2>¿Que se agregará a esta aplicación?</h2>
-
+<p>Actualmente usted está utilizando Zool en su versión '+version+'. Las modificaciones mencionadas serán agregadas a la versión 0.4</p>
+<h2>¿Ha encontrado alguna falla o desea aportar alguna idea?</h2>
+<p>Puede comunicarse directamente conmigo a las siguientes vías de comunicación.</p>
+<ul>
+    <li><b>Grupo de Facebook: </b> <a href="https://www.facebook.com/groups/386512166139820" style="color: '+apps.fontColor+';">Aplicación Astrológica Zool</a></li>
+    <li><b>Correo Electrónico: </b> <a href="mailto:nextsigner@gmail.com" style="color: '+apps.fontColor+';">nextsigner@gmail.com</a></li>
+    <li><b>Whatsapp: </b> +54 11 3802 4370</li>
+</ul>
 <br/><br/>
 '
         txt2.text=t
