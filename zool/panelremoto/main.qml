@@ -1,6 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
-import QtQuick.Controls 2.0
+import QtQuick.Controls 2.12
 import Qt.labs.settings 1.1
 import "Funcs.js" as JS
 
@@ -13,16 +13,16 @@ Rectangle{
     border.color: apps.fontColor
     anchors.centerIn: parent
     //property string parentState: panelRemoto
-//    onParentStateChanged: {
-//        if(panelRemoto.state==='show')prs.state='show'
-//    }
+    //    onParentStateChanged: {
+    //        if(panelRemoto.state==='show')prs.state='show'
+    //    }
     Settings{
         id: prs
         fileName: unik.getPath(4)+'/panleRemoto.cfg'
         property string state: 'show'
         property int currentViewIndex: 0
         onStateChanged: panelRemoto.state=state
-     }
+    }
     SwipeView{
         id: view
         currentIndex: prs.currentViewIndex
@@ -83,6 +83,67 @@ Rectangle{
                         app.uSon=s1+'_'+s2+'_'+s3
                         console.log('uSon: '+app.uSon)
                         JS.showIW()
+                    }
+                }
+            }
+        }
+        Item{
+            width: r.width
+            height: r.height
+            Flickable{
+                width: r.width
+                height: r.height
+                contentHeight: txt2.contentHeight
+                Column{
+                    spacing: app.fs*0.5
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: parent.top
+                    anchors.topMargin: app.fs*0.5
+                    Text{
+                        text: '<b>Controles</b>'
+                        font.pixelSize: app.fs*0.5
+                        color: apps.fontColor
+                        width: parent.width-app.fs*0.5
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        textFormat: Text.RichText
+                        wrapMode: Text.WordWrap
+                        onLinkActivated: Qt.openUrlExternally(link)
+                    }
+                    Row{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Ver Lineas de Grados';anchors.verticalCenter: parent.verticalCenter}
+                        CheckBox{
+                            checked: apps.showNumberLines
+                            anchors.verticalCenter: parent.verticalCenter
+                            onCheckStateChanged: apps.showNumberLines=checked
+                        }
+                    }
+                    Row{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Ver Ejes de Casas';anchors.verticalCenter: parent.verticalCenter}
+                        CheckBox{
+                            checked: apps.showHousesAxis
+                            anchors.verticalCenter: parent.verticalCenter
+                            onCheckStateChanged: apps.showHousesAxis=checked
+                        }
+                    }
+                    Column{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Ancho del Ejes de Casas';anchors.horizontalCenter: parent.horizontalCenter}
+                        SpinBox{
+                            stepSize: 2.0
+                            value: apps.widthHousesAxis
+                            onValueChanged: {
+                                if(value<3||value>12){
+                                    apps.widthHousesAxis=1.0
+                                }else{
+                                    apps.widthHousesAxis=value
+                                }
+                            }
+                        }
                     }
                 }
             }
