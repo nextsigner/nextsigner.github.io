@@ -30,6 +30,10 @@ Window{
             onLinkActivated: Qt.openUrlExternally(link)
         }
     }
+    Shortcut{
+        sequence: 'Esc'
+        onActivated: r.close()
+    }
     Component.onCompleted: {
         let t='<h1>Quienes hacen posible esta aplicación</h1>
 <h2>Desarrolladores</h2>

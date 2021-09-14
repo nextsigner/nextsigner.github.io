@@ -30,6 +30,10 @@ Window{
             onLinkActivated: Qt.openUrlExternally(link)
         }
     }
+    Shortcut{
+        sequence: 'Esc'
+        onActivated: r.close()
+    }
     Component.onCompleted: {
         let t='<h1>Ayuda de Zool</h1>
 <h2>Crear Mapa Natal</h2>
