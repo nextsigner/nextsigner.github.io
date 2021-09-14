@@ -9,6 +9,7 @@ Window{
     height: Screen.height*0.75
     x: (Screen.width-width)*0.5
     y:app.fs*3
+    visibility: "Maximized"
     title: 'Bienvenido a Zool - Novedades'
     color: 'black'
     onClosing: {

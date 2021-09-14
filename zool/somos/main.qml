@@ -9,6 +9,7 @@ Window{
     height: Screen.height*0.75
     x: (Screen.width-width)*0.5
     y:app.fs*3
+    visibility: "Maximized"
     title: 'Zool - Agradecimientos'
     color: 'black'
     onClosing: {
@@ -33,7 +34,7 @@ Window{
         let t='<h1>Quienes hacen posible esta aplicación</h1>
 <h2>Desarrolladores</h2>
 <ul>
-    <li>Ricardo Martín Pizarro (Programador)</li>
+    <li>Ricardo Martín Pizarro</li>
     <li>Eitán Flores</li>
     <li>Juanchirris Ruiz</li>
 </ul>
