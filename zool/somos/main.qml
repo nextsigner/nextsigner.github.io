@@ -8,7 +8,7 @@ Window{
     width: Screen.width*0.35
     height: Screen.height*0.5
     x: (Screen.width-width)*0.5
-    title: 'Bienvenido a Zool - Novedades'
+    title: 'Zool - Agradeciminetos'
     color: 'black'
     onClosing: {
         apps.newClosed=true
@@ -29,16 +29,14 @@ Window{
         }
     }
     Component.onCompleted: {
-        let t='<h1>Desarrolladores de Zool</h1>
-<h2>Lista de Patrocinadores</h2>
-<p>Lista de personas que colaboran con el proyecto Zool</p>
-<p>Esta aplicación es desarrollada por:</p>
+        let t='<h1>Quienes hacen posible esta aplicación</h1>
+<h2>Desarrolladores</h2>
 <ul>
     <li>Ricardo Martín Pizarro (Programador)</li>
     <li>Eitán Flores</li>
     <li>Juanchirris Ruiz</li>
 </ul>
-<p>Esta aplicación es posible gracias al apoyo y patrocinio de:</p>
+<h2>Patrocinadores</h2>
 <ul>
     <li>Nicolás Martín Pizarro</li>
     <li>Natalia Soledad Pintos</li>
