@@ -6,9 +6,10 @@ Window{
     id: r
     visible: true
     width: Screen.width*0.35
-    height: Screen.height*0.5
+    height: Screen.height*0.75
     x: (Screen.width-width)*0.5
-    title: 'Zool - Agradeciminetos'
+    y:app.fs*3
+    title: 'Zool - Agradecimientos'
     color: 'black'
     onClosing: {
         apps.newClosed=true

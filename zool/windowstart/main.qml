@@ -6,8 +6,9 @@ Window{
     id: r
     visible: true
     width: Screen.width*0.35
-    height: Screen.height*0.5
+    height: Screen.height*0.75
     x: (Screen.width-width)*0.5
+    y:app.fs*3
     title: 'Bienvenido a Zool - Novedades'
     color: 'black'
     onClosing: {
