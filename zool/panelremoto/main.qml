@@ -3,6 +3,7 @@ import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
 import Qt.labs.settings 1.1
 import "Funcs.js" as JS
+import "Extra.js" as EXTRA
 
 Rectangle{
     id: r
@@ -93,8 +94,9 @@ Rectangle{
             Flickable{
                 width: r.width
                 height: r.height
-                contentHeight: txt2.contentHeight
+                contentHeight: col2.height+app.fs*3
                 Column{
+                    id: col2
                     spacing: app.fs*0.5
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
@@ -108,6 +110,43 @@ Rectangle{
                         textFormat: Text.RichText
                         wrapMode: Text.WordWrap
                         onLinkActivated: Qt.openUrlExternally(link)
+                    }
+                    Row{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        Button{
+                            text: 'Tema Claro'
+                            onClicked: {
+                                apps.fontColor='#000000'
+                                apps.backgroundColor='#ffffff'
+                                apps.lupaColor='#000000'
+                                apps.xAsColor='black'
+                                apps.xAsColorBack='white'
+                                apps.xAsBackgroundColorBack='black'
+                            }
+                        }
+                        Button{
+                            text: 'Tema Oscuro'
+                            onClicked: {
+                                apps.fontColor='#ffffff'
+                                apps.backgroundColor='#000000'
+                                apps.lupaColor='#ffffff'
+                                apps.xAsColor='white'
+                                apps.xAsColorBack='black'
+                                apps.xAsBackgroundColorBack='white'
+                            }
+                        }
+                        Button{
+                            text: 'Tema Verde Negro'
+                            onClicked: {
+                                apps.fontColor='#71FC30'
+                                apps.backgroundColor='#000000'
+                                apps.lupaColor='#71FC30'
+                                apps.xAsColor='#71FC30'
+                                apps.xAsColorBack='#000000'
+                                apps.xAsBackgroundColorBack='#71FC30'
+                            }
+                        }
                     }
                     Row{
                         spacing: app.fs*0.25
@@ -145,6 +184,146 @@ Rectangle{
                             }
                         }
                     }
+                    Column{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Ancho del Circulo signos';anchors.horizontalCenter: parent.horizontalCenter}
+                        SpinBox{
+                            stepSize: app.fs*0.1
+                            value: sweg.w
+                            onValueChanged: {
+                                if(value<app.fs*0.5||value>app.fs*2){
+                                    apps.sweFs=app.fs
+                                }else{
+                                    apps.sweFs=value
+                                }
+                            }
+                        }
+                    }
+                    Column{
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        Text{text:'Sistema de Casas por defecto'; color: apps.fontColor;font.pixelSize: app.fs*0.5}
+                        ComboBox{
+                            id: cbHsys
+                            width: r.width-app.fs
+                            height: app.fs*0.75
+                            model: app.ahysNames
+                            currentIndex: app.ahys.indexOf(apps.defaultHsys)
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            //anchors.bottom: parent.bottom
+                            onCurrentIndexChanged: {
+                                if(currentIndex===app.ahys.indexOf(apps.defaultHsys))return
+                                apps.defaultHsys=app.ahys[currentIndex]
+                                JS.showMsgDialog('Zool Informa', 'El sistema de casas por defecto ha sido cambiado.', 'Se ha seleccionado el sistema de casas '+app.ahysNames[currentIndex]+'. Este sistema de casas será utilizado cada vez que se crea una carta.')
+                            }
+                        }
+                    }
+
+                    Row{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        Text{
+                            text: 'Seleccionar color de casa'
+                            font.pixelSize: app.fs*0.5
+                            color: apps.fontColor
+                        }
+                        Rectangle{
+                            width: app.fs
+                            height: width
+                            border.width: 1
+                            border.color: apps.fontColor
+                            color: apps.houseColor
+                            anchors.verticalCenter: parent.verticalCenter
+                            Text{
+                                text: 'Interior'
+                                font.pixelSize: app.fs*0.25
+                                color: apps.fontColor
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                anchors.bottom: parent.top
+                            }
+                            MouseArea{
+                                anchors.fill: parent
+                                onClicked: {
+                                    rep.model=EXTRA.getArrayColors()
+                                    xColorSelector.mod=0
+                                    xColorSelector.visible=true
+                                }
+                            }
+                        }
+                        Rectangle{
+                            width: app.fs
+                            height: width
+                            border.width: 1
+                            border.color: apps.fontColor
+                            color: apps.houseColorBack
+                            anchors.verticalCenter: parent.verticalCenter
+                            Text{
+                                text: 'Exterior'
+                                font.pixelSize: app.fs*0.25
+                                color: apps.fontColor
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                anchors.bottom: parent.top
+                            }
+                            MouseArea{
+                                anchors.fill: parent
+                                onClicked: {
+                                    rep.model=EXTRA.getArrayColors()
+                                    xColorSelector.mod=1
+                                    xColorSelector.visible=true
+                                }
+                            }
+                        }
+                    }
+
+                    Rectangle{
+                        id: xColorSelector
+                        width: r.width-app.fs
+                        height: ((r.width-app.fs)/16)*16
+                        border.width: 2
+                        border.color: apps.fontColor
+                        visible: false
+                        property int mod: -1
+                        Grid{
+                            id: griColors
+                            width: r.width-app.fs
+                            height: ((r.width-app.fs)/16)*16
+                            columns: 16
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            Repeater{
+                                id: rep
+                                Rectangle{
+                                    width: (r.width-app.fs)/16
+                                    height: width
+                                    color: modelData
+                                    border.width: 1
+                                    border.color: apps.fontColor
+                                    MouseArea{
+                                        anchors.fill: parent
+                                        onClicked: {
+                                            if(xColorSelector.mod===0){
+                                                apps.houseColor=modelData
+                                                xColorSelector.visible=false
+                                                JS.loadJson(apps.url)
+                                            }
+                                            if(xColorSelector.mod===1){
+                                                apps.houseColorBack=modelData
+                                                xColorSelector.visible=false
+                                                JS.loadJson(apps.url)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            //Component.onCompleted: rep.model=EXTRA.getArrayColors()
+                        }
+                    }
+
+                    //                    Button{
+                    //                        text: 'Limpiar Aspectos'
+                    //                        onClicked: {
+                    //                            sweg.objAspsCircle.clear()
+                    //                        }
+                    //                   }
                 }
             }
         }
