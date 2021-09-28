@@ -123,6 +123,8 @@ Rectangle{
                                 apps.xAsColor='black'
                                 apps.xAsColorBack='white'
                                 apps.xAsBackgroundColorBack='black'
+                                apps.houseLineColor='blue'
+                                apps.houseLineColorBack='red'
                             }
                         }
                         Button{
@@ -134,6 +136,8 @@ Rectangle{
                                 apps.xAsColor='white'
                                 apps.xAsColorBack='black'
                                 apps.xAsBackgroundColorBack='white'
+                                apps.houseLineColor='white'
+                                apps.houseLineColorBack='red'
                             }
                         }
                         Button{
@@ -145,6 +149,8 @@ Rectangle{
                                 apps.xAsColor='#71FC30'
                                 apps.xAsColorBack='#000000'
                                 apps.xAsBackgroundColorBack='#71FC30'
+                                apps.houseLineColor='white'
+                                apps.houseLineColorBack='gray'
                             }
                         }
                     }
@@ -339,6 +345,39 @@ Rectangle{
                         }
                     }
                     Column{id: colSelectLineHouses}
+
+
+                    //Tamaño de PanelElementos
+                    Column{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Tamaño de Lista de Elementos';anchors.horizontalCenter: parent.horizontalCenter}
+                        SpinBox{
+                            stepSize: 1.0
+                            value: 50
+                            onValueChanged: {
+                                let fs=apps.elementsFs
+                                let v=fs/100*(100-value)
+//                                log.l('app.fs: '+app.fs)
+//                                log.l('fs: '+fs)
+//                                log.l('v: '+v)
+                                apps.elementsFs=app.fs+(app.fs-v)
+//                                log.l('apps.elementsFs: '+apps.elementsFs)
+//                                log.l('\n')
+                                //log.x+=10
+                                if(apps.elementsFs<app.fs||apps.elementsFs>app.fs*2){
+                                    apps.elementsFs=app.fs
+                                }
+                                panelElements.update()
+
+//                                if(apps.elementsFs>app.fs&&apps.elementsFs<app.fs*2){
+//                                    apps.elementsFs+=0.2
+//                                }else{
+//                                    apps.elementsFs=app.fs
+//                                }
+                            }
+                        }
+                    }
 
                     //                    Button{
                     //                        text: 'Limpiar Aspectos'
