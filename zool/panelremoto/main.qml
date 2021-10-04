@@ -88,6 +88,8 @@ Rectangle{
                 }
             }
         }
+
+        //Controles
         Item{
             width: r.width
             height: r.height
@@ -101,6 +103,7 @@ Rectangle{
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: app.fs*0.5
+                    Item{width: 1;height: app.fs}
                     Text{
                         text: '<b>Controles</b>'
                         font.pixelSize: app.fs*0.5
@@ -111,49 +114,19 @@ Rectangle{
                         wrapMode: Text.WordWrap
                         onLinkActivated: Qt.openUrlExternally(link)
                     }
+
+                    //Ver animación de plenetas.
                     Row{
                         spacing: app.fs*0.25
                         anchors.horizontalCenter: parent.horizontalCenter
-                        Button{
-                            text: 'Tema Claro'
-                            onClicked: {
-                                apps.fontColor='#000000'
-                                apps.backgroundColor='#ffffff'
-                                apps.lupaColor='#000000'
-                                apps.xAsColor='black'
-                                apps.xAsColorBack='white'
-                                apps.xAsBackgroundColorBack='black'
-                                apps.houseLineColor='blue'
-                                apps.houseLineColorBack='red'
-                            }
-                        }
-                        Button{
-                            text: 'Tema Oscuro'
-                            onClicked: {
-                                apps.fontColor='#ffffff'
-                                apps.backgroundColor='#000000'
-                                apps.lupaColor='#ffffff'
-                                apps.xAsColor='white'
-                                apps.xAsColorBack='black'
-                                apps.xAsBackgroundColorBack='white'
-                                apps.houseLineColor='white'
-                                apps.houseLineColorBack='red'
-                            }
-                        }
-                        Button{
-                            text: 'Tema Verde Negro'
-                            onClicked: {
-                                apps.fontColor='#71FC30'
-                                apps.backgroundColor='#000000'
-                                apps.lupaColor='#71FC30'
-                                apps.xAsColor='#71FC30'
-                                apps.xAsColorBack='#000000'
-                                apps.xAsBackgroundColorBack='#71FC30'
-                                apps.houseLineColor='white'
-                                apps.houseLineColorBack='gray'
-                            }
+                        XText{text: 'Destello de planetas';anchors.verticalCenter: parent.verticalCenter}
+                        CheckBox{
+                            checked: apps.showNumberLines
+                            anchors.verticalCenter: parent.verticalCenter
+                            onCheckStateChanged: apps.anColorXAs=checked
                         }
                     }
+                    //Ver Lineas de Grados
                     Row{
                         spacing: app.fs*0.25
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -221,6 +194,109 @@ Rectangle{
                                 if(currentIndex===app.ahys.indexOf(apps.defaultHsys))return
                                 apps.defaultHsys=app.ahys[currentIndex]
                                 JS.showMsgDialog('Zool Informa', 'El sistema de casas por defecto ha sido cambiado.', 'Se ha seleccionado el sistema de casas '+app.ahysNames[currentIndex]+'. Este sistema de casas será utilizado cada vez que se crea una carta.')
+                            }
+                        }
+                    }
+
+                    //Tamaño de PanelElementos
+                    Column{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Tamaño de Lista de Elementos';anchors.horizontalCenter: parent.horizontalCenter}
+                        SpinBox{
+                            stepSize: 1.0
+                            value: 50
+                            onValueChanged: {
+                                let fs=apps.elementsFs
+                                let v=fs/100*(100-value)
+                                //                                log.l('app.fs: '+app.fs)
+                                //                                log.l('fs: '+fs)
+                                //                                log.l('v: '+v)
+                                apps.elementsFs=app.fs+(app.fs-v)
+                                //                                log.l('apps.elementsFs: '+apps.elementsFs)
+                                //                                log.l('\n')
+                                //log.x+=10
+                                if(apps.elementsFs<app.fs||apps.elementsFs>app.fs*2){
+                                    apps.elementsFs=app.fs
+                                }
+                                panelElements.update()
+
+                                //                                if(apps.elementsFs>app.fs&&apps.elementsFs<app.fs*2){
+                                //                                    apps.elementsFs+=0.2
+                                //                                }else{
+                                //                                    apps.elementsFs=app.fs
+                                //                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //Colores
+        Item{
+            width: r.width
+            height: r.height
+            Flickable{
+                width: r.width
+                height: r.height
+                contentHeight: col2.height+app.fs*3
+                Column{
+                    id: col3
+                    spacing: app.fs*0.5
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: parent.top
+                    anchors.topMargin: app.fs*0.5
+                    Item{width: 1;height: app.fs}
+                    Text{
+                        text: '<b>Colores</b>'
+                        font.pixelSize: app.fs*0.5
+                        color: apps.fontColor
+                        width: parent.width-app.fs*0.5
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        textFormat: Text.RichText
+                        wrapMode: Text.WordWrap
+                        onLinkActivated: Qt.openUrlExternally(link)
+                    }
+                    Row{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        Button{
+                            text: 'Tema Claro'
+                            onClicked: {
+                                apps.fontColor='#000000'
+                                apps.backgroundColor='#ffffff'
+                                apps.lupaColor='#000000'
+                                apps.xAsColor='black'
+                                apps.xAsColorBack='white'
+                                apps.xAsBackgroundColorBack='black'
+                                apps.houseLineColor='blue'
+                                apps.houseLineColorBack='red'
+                            }
+                        }
+                        Button{
+                            text: 'Tema Oscuro'
+                            onClicked: {
+                                apps.fontColor='#ffffff'
+                                apps.backgroundColor='#000000'
+                                apps.lupaColor='#ffffff'
+                                apps.xAsColor='white'
+                                apps.xAsColorBack='black'
+                                apps.xAsBackgroundColorBack='white'
+                                apps.houseLineColor='white'
+                                apps.houseLineColorBack='red'
+                            }
+                        }
+                        Button{
+                            text: 'Tema Verde Negro'
+                            onClicked: {
+                                apps.fontColor='#71FC30'
+                                apps.backgroundColor='#000000'
+                                apps.lupaColor='#71FC30'
+                                apps.xAsColor='#71FC30'
+                                apps.xAsColorBack='#000000'
+                                apps.xAsBackgroundColorBack='#71FC30'
+                                apps.houseLineColor='white'
+                                apps.houseLineColorBack='gray'
                             }
                         }
                     }
@@ -345,49 +421,10 @@ Rectangle{
                         }
                     }
                     Column{id: colSelectLineHouses}
-
-
-                    //Tamaño de PanelElementos
-                    Column{
-                        spacing: app.fs*0.25
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        XText{text: 'Tamaño de Lista de Elementos';anchors.horizontalCenter: parent.horizontalCenter}
-                        SpinBox{
-                            stepSize: 1.0
-                            value: 50
-                            onValueChanged: {
-                                let fs=apps.elementsFs
-                                let v=fs/100*(100-value)
-//                                log.l('app.fs: '+app.fs)
-//                                log.l('fs: '+fs)
-//                                log.l('v: '+v)
-                                apps.elementsFs=app.fs+(app.fs-v)
-//                                log.l('apps.elementsFs: '+apps.elementsFs)
-//                                log.l('\n')
-                                //log.x+=10
-                                if(apps.elementsFs<app.fs||apps.elementsFs>app.fs*2){
-                                    apps.elementsFs=app.fs
-                                }
-                                panelElements.update()
-
-//                                if(apps.elementsFs>app.fs&&apps.elementsFs<app.fs*2){
-//                                    apps.elementsFs+=0.2
-//                                }else{
-//                                    apps.elementsFs=app.fs
-//                                }
-                            }
-                        }
-                    }
-
-                    //                    Button{
-                    //                        text: 'Limpiar Aspectos'
-                    //                        onClicked: {
-                    //                            sweg.objAspsCircle.clear()
-                    //                        }
-                    //                   }
                 }
             }
         }
+
         Item{
             id:xShowIW2
             width: r.width
