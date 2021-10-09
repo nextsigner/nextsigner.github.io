@@ -31,6 +31,9 @@ Rectangle{
         anchors.fill: parent
         //width: r.width
         //height: r.height
+
+
+        //Información
         Item{
             id:xShowIW
             width: r.width
@@ -39,6 +42,26 @@ Rectangle{
                 id: col
                 spacing: app.fs*0.25
                 anchors.centerIn: parent
+                Button{
+                    text: apps.chat?'No Chatear con el Programador':'Chatear con el Programador'
+                    //width: implicitContentWidth+app.fs*0.5
+                    height: app.fs*0.6
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: {
+                        apps.chat=!apps.chat
+                    }
+                }
+                Button{
+                    text: chat.onTop?'Chat detras de todo':'Chat encima de todo'
+                    //width: implicitContentWidth+app.fs*0.5
+                    height: app.fs*0.6
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    visible: apps.chat
+                    onClicked: {
+                        chat.onTop=!chat.onTop
+                    }
+                }
+
                 Text{
                     text: '<b>Repositorio Quirón</b>'
                     font.pixelSize: app.fs*0.5
@@ -86,6 +109,9 @@ Rectangle{
                         JS.showIW()
                     }
                 }
+
+
+
             }
         }
 
