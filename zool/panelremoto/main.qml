@@ -32,6 +32,118 @@ Rectangle{
         //width: r.width
         //height: r.height
 
+        //Información
+        Item{
+            id: xShowAboutZool
+            width: r.width
+            height: r.height
+            Column{
+                id: col0
+                anchors.centerIn: parent
+                Rectangle{
+                    id: xTxtAboutZool
+                    width: xShowAboutZool.width
+                    height: xShowAboutZool.height-cameraArea.height
+                    color: apps.backgroundColor
+                    border.width: 1
+                    border.color: apps.fontColor
+                    clip: true
+                    MouseArea{
+                        anchors.fill: parent
+                        acceptedButtons: Qt.LeftButton | Qt.RightButton
+                        onClicked: {
+                            if (mouse.button === Qt.RightButton) {
+                                tTxtAboutZool.running=false
+                                if(tTxtAboutZool.v<txtAboutZool.aData.length-1){
+                                    tTxtAboutZool.v++
+                                }else{
+                                    tTxtAboutZool.v=0
+                                }
+                                txtAboutZool.text=txtAboutZool.aData[tTxtAboutZool.v]
+                            }else{
+                                tTxtAboutZool.running=!tTxtAboutZool.running
+                            }
+                        }
+                    }
+                    Text{
+                        id: txtAboutZool
+                        text: aData[0]
+                        font.pixelSize: app.fs*0.75
+                        color: 'white'
+                        width: r.width-app.fs
+                        anchors.centerIn: parent
+                        textFormat: Text.MarkdownText
+                        wrapMode: Text.WordWrap
+                        //onLinkActivated: Qt.openUrlExternally(link)
+                        property var aData: ['# Zool<br />
+### Aplicación de Astrología<br />
+
+Creada por<br />
+Ricardo Martín Pizarro<br />
+
+Inicio del Desarrollo:<br />
+14/04/2021', '# Licencia de Zool<br />
+Esta aplicación es de uso libre y gratuito.<br />
+
+Esta aplicación es distribuida bajo las licencias GPL2.', '### Descargar Zool<br />
+
+**Sitio Web:** Zool.ar<br />
+
+### Información del Código fuente<br />
+
+**Repositorio Público:** GitHub.com/nextsigner/zool', '## Zool fue creado con:<br />
+* Qt Open Source
+* SwissEph
+* Astrolog', '# Contacto<br />
+
+**Whatsapp:**<br />
++549 11 3802 4370<br />
+
+**E-Mail:**<br />
+nextsigner@gmail.com<br />
+
+**Twitch:**<br />
+RicardoMartinPizarro<br />
+']
+
+                        Behavior on opacity{NumberAnimation{duration: 1500}}
+                        onOpacityChanged: {
+                            if(opacity===0.0){
+                                txtAboutZool.text=txtAboutZool.aData[tTxtAboutZool.v]
+                                tTxtAboutZool.running=true
+                                txtAboutZool.opacity=1.0
+                            }
+                        }
+                        Timer{
+                            id: tTxtAboutZool
+                            running: view.currentIndex===0
+                            repeat: true
+                            interval: 12000
+                            property int v: 1
+                            onTriggered: {
+                                //txtAboutZool.text=txtAboutZool.aData[v]
+                                if(v<txtAboutZool.aData.length-1){
+                                    v++
+                                }else{
+                                    v=0
+                                }
+                                txtAboutZool.opacity=0.0
+                                running=false
+                            }
+                        }
+                    }
+                    }
+
+                Rectangle{
+                    id: cameraArea
+                    width: xShowAboutZool.width
+                    height: app.fs*6
+                    color: apps.backgroundColor
+                    border.width: 1
+                    border.color: apps.fontColor
+                }
+            }
+        }
 
         //Información
         Item{
@@ -110,6 +222,28 @@ Rectangle{
                     }
                 }
 
+                //Clonar para comparar DEV rueda Ext y rueda Int
+                Button{
+                    text: 'Cargar Clon Exterior'
+                    font.pixelSize: app.fs*0.35
+                    //width: app.fs*1.5
+                    height: app.fs*0.6
+                    visible: false
+                    onClicked: {
+                        let j=JSON.parse(app.currentData)
+                        let p=j.params
+                        JS.loadFromArgsBack(p.d, p.m, p.a, p.h, p.min, p.gmt, p.lat, p.lon, p.alt?p.alt:0, p.nom, p.ciudad, 'trans', false)
+                    }
+                }
+                Button{
+                    text: 'Cargar Tránsitos Absolutos'
+                    font.pixelSize: app.fs*0.35
+                    //width: app.fs*1.5
+                    height: app.fs*0.6
+                    onClicked: {
+                        JS.loadTransNow()
+                    }
+                }
 
 
             }
@@ -147,7 +281,7 @@ Rectangle{
                         anchors.horizontalCenter: parent.horizontalCenter
                         XText{text: 'Destello de planetas';anchors.verticalCenter: parent.verticalCenter}
                         CheckBox{
-                            checked: apps.showNumberLines
+                            checked: apps.anColorXAs
                             anchors.verticalCenter: parent.verticalCenter
                             onCheckStateChanged: apps.anColorXAs=checked
                         }
@@ -255,9 +389,118 @@ Rectangle{
                             }
                         }
                     }
+                    //Tamaño de Botones
+                    Column{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Tamaño de Botones';anchors.horizontalCenter: parent.horizontalCenter}
+                        SpinBox{
+                            stepSize: 1.0
+                            value: apps.botSizeSpinBoxValue
+                            onValueChanged: {
+                                let nv=parseInt(app.fs*0.5+value*0.25)
+                                apps.botSize=nv
+                                apps.botSizeSpinBoxValue=value
+                            }
+                        }
+                    }
                 }
             }
         }
+
+        //Controles Adicionales
+        Item{
+            width: r.width
+            height: r.height
+            Flickable{
+                width: r.width
+                height: r.height
+                contentHeight: colControlesAd.height+app.fs*3
+                Column{
+                    id: colControlesAd
+                    spacing: app.fs*0.5
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: parent.top
+                    anchors.topMargin: app.fs*0.5
+                    Item{width: 1;height: app.fs}
+                    Text{
+                        text: '<b>Controles Adicionales</b>'
+                        font.pixelSize: app.fs*0.5
+                        color: apps.fontColor
+                        width: parent.width-app.fs*0.5
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        textFormat: Text.RichText
+                        wrapMode: Text.WordWrap
+                        onLinkActivated: Qt.openUrlExternally(link)
+                    }
+
+                    //Crear Carta Mundial de Ahora
+                    Button{
+                        text: 'Crear Mapa Mundial de Ahora'
+                        height: app.fs*0.6
+                        onClicked: {
+                            var offset = new Date().getTimezoneOffset();
+                            //console.log('Zool GMT Client: '+offset);
+                            let date0=new Date(Date.now())
+                            date0=date0.setMinutes(date0.getMinutes()+offset)
+                            //let d1=new Date.UTC(2021,7,20,11,34,0)
+                            var date = new Date(date0);
+                            var now_utc =  Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(),
+                                                    date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+
+                            let d1=new Date(now_utc);
+                            //console.log('Zool United KIngston Hour: '+d1.toString());
+                            JS.loadFromArgs(d1.getDate(), parseInt(d1.getMonth() +1),d1.getFullYear(), d1.getHours(), d1.getMinutes(), 0.0,53.4543314,-2.113293483429562,6, "United Kingston "+d1.getDate()+"-"+parseInt(d1.getMonth() +1)+"-"+d1.getFullYear(), "United Kingston England", "vn", true)
+                        }
+                    }
+
+
+                    //Mostrar plenetas automáticamente.
+                    Row{
+                        spacing: app.fs*0.25
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        XText{text: 'Mostrar Automático';anchors.verticalCenter: parent.verticalCenter}
+                        CheckBox{
+                            checked: tAutoMaticPlanets.running
+                            anchors.verticalCenter: parent.verticalCenter
+                            onCheckStateChanged: {
+                                tAutoMaticPlanets.currentJsonData=app.currentData
+                                tAutoMaticPlanets.running=checked
+                                if(checked)app.currentPlanetIndex=0
+                            }
+                            Timer{
+                                id: tAutoMaticPlanets
+                                running: false
+                                repeat: true
+                                interval: 10000
+                                property string currentJsonData: ''
+                                onTriggered: {
+                                    if(tAutoMaticPlanets.currentJsonData!==app.currentData){
+                                        tAutoMaticPlanets.stop()
+                                        return
+                                    }
+                                    if(app.currentPlanetIndex<16){
+                                        app.currentPlanetIndex++
+                                    }else{
+                                        app.currentPlanetIndex=-1
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //Información General de Astromedicina.
+                    Button{
+                        text: 'Ver Información Astromedicina'
+                        height: app.fs*0.6
+                        onClicked: {
+                            xInfoData.loadData('./resources/astromedicina.html')
+                        }
+                    }
+                }
+            }
+        }
+
         //Colores
         Item{
             width: r.width
@@ -265,9 +508,9 @@ Rectangle{
             Flickable{
                 width: r.width
                 height: r.height
-                contentHeight: col2.height+app.fs*3
+                contentHeight: colColores.height+app.fs*3
                 Column{
-                    id: col3
+                    id: colColores
                     spacing: app.fs*0.5
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
@@ -451,6 +694,7 @@ Rectangle{
             }
         }
 
+        //Informacion / Hacer Aportes / Apoyar proyecto
         Item{
             id:xShowIW2
             width: r.width
@@ -471,6 +715,8 @@ Rectangle{
                 }
             }
         }
+
+        //Aviso del Programador
         Item{
             width: r.width
             height: r.height
