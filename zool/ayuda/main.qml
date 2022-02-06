@@ -88,6 +88,11 @@ Window{
 </ul>
 
 <br/><br/>
+<h4>Contacto</h4>
+<p>Esta aplicación aún está en etapa de desarrollo. Si necesitas más ayuda o információn me puedes contactar al correo nextsigner@gmail.com o a el Whatsapp +5491138024370</p>
+<br/><br/>
+
+<br/><br/>
 <h4>Última actualización 6/2/2022</h4>
 <br/><br/>
 '
