@@ -860,6 +860,7 @@ RicardoMartinPizarro<br />
 
     Component.onCompleted: {
         //console.log('PanelRemoto Cfg path: '+unik.getPath(4))
+        panelRemoto.z=panelSabianos.z-1
         panelRemoto.state=prs.state
 
         let t='<br/>

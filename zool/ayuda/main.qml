@@ -54,8 +54,41 @@ Window{
 <p>La búsqueda de los archivo se realizará por defecto en la carpeta "Documentos". Ejemplo: "C:/Users/ns/Documents And Settings/Zool/*.json".</p>
 <p><b>Nota: </b> Para ver el panel de buscar carta natal desde el teclado presiones las teclas "Ctrl" y "F" simultáneamente.</p>
 
+<h2>Lista de Funciones por medio de Combinación de Teclas</h2>
+<ul>
+
+    <li>
+        <b>Ctrl+<Número entre 0 y 9>: </b>Seleccionar cuerpo: 0=Sol, 1=Luna, 2=Mercurio, 3=Venus, 4=Marte, 5=Júpiter, 6=Saturno, 7=Urano, 8=Neptuno, 9=Plutón.
+    </li>
+
+    <li>
+        <b>Ctrl+*: </b>Seleccionar Ascendente.
+    </li>
+
+    <li>
+        <b>Ctrl+/: </b>Seleccionar Medio Cielo.
+    </li>
+
+    <li>
+        <b>Espacio: </b>Cambiar desde signos a imágenes de planetas.
+    </li>
+
+    <li>
+        <b>Ctrl+Shift+d: </b>Mostrar / Ocultar Decanatos.
+    </li>
+
+    <li>
+        <b>Ctrl+Shift+l: </b>Mostrar / Ocultar Líneas de grados.
+    </li>
+
+    <li>
+        <b>Ctrl+Shift+r: </b>Grabar posición de Zoom y posición de la carta.
+    </li>
+
+</ul>
+
 <br/><br/>
-<h4>Hoy 24/08/2021 08:22hs de Argentina estoy completando este manual</h4>
+<h4>Última actualización 6/2/2022</h4>
 <br/><br/>
 '
         txt.text=t
