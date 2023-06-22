@@ -1,1 +1,1 @@
-se edita zooland-reps
+se configura zooland-reps para ip 52
