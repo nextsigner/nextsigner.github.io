@@ -1,1 +1,1 @@
-se configura zooland-reps para ip 52
+se configura zooland-reps para zooland-control-release
