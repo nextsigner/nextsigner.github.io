@@ -1,1 +1,1 @@
-se configura zooland-reps para zooland-control-release
+se reconfigura zooland-reps para zooland-control-release
