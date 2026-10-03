@@ -1,1 +1,1 @@
-Se edita index.html
+Se edita apps.txt
