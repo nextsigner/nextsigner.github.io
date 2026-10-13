@@ -1,3 +1,4 @@
 0 runik-start https://github.com/nextsigner/runik-start
 1 movete https://github.com/nextsigner/movete
 2 aristoteles https://github.com/nextsigner/aristoteles
+3 camara https://github.com/nextsigner/runik-android-cam
